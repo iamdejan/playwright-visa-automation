@@ -9,6 +9,10 @@ You need to install these programs:
 2. PNPM.
 3. Playwright: `pnpm exec playwright install --with-deps`
 
+In order to run the test, you need to set the environment variables, which are:
+- `PASSPORT_NUMBER`: your passport number; and
+- `COUNTRY`: the name of the country where the passport is issued. You can see the list of valid names in the EMGS website.
+
 ## Run The Test
 
 There are several modes where you can run the test:
