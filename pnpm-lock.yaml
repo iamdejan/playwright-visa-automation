@@ -9,15 +9,15 @@ importers:
   .:
     dependencies:
       dotenv:
-        specifier: ^16.5.0
-        version: 16.5.0
+        specifier: ^17.1
+        version: 17.1.0
     devDependencies:
       '@playwright/test':
         specifier: ^1.52.0
         version: 1.52.0
       '@types/node':
-        specifier: ^22.15.18
-        version: 22.15.18
+        specifier: ^24.0.12
+        version: 24.0.12
 
 packages:
 
@@ -26,11 +26,11 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@types/node@22.15.18':
-    resolution: {integrity: sha512-v1DKRfUdyW+jJhZNEI1PYy29S2YRxMV5AOO/x/SjKmW0acCIOqmbj6Haf9eHAhsPmrhlHSxEhv/1WszcLWV4cg==}
+  '@types/node@24.0.12':
+    resolution: {integrity: sha512-LtOrbvDf5ndC9Xi+4QZjVL0woFymF/xSTKZKPgrrl7H7XoeDvnD+E2IclKVDyaK9UM756W/3BXqSU+JEHopA9g==}
 
-  dotenv@16.5.0:
-    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
+  dotenv@17.1.0:
+    resolution: {integrity: sha512-tG9VUTJTuju6GcXgbdsOuRhupE8cb4mRgY5JLRCh4MtGoVo3/gfGUtOMwmProM6d0ba2mCFvv+WrpYJV6qgJXQ==}
     engines: {node: '>=12'}
 
   fsevents@2.3.2:
@@ -48,8 +48,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.8.0:
+    resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
 
 snapshots:
 
@@ -57,11 +57,11 @@ snapshots:
     dependencies:
       playwright: 1.52.0
 
-  '@types/node@22.15.18':
+  '@types/node@24.0.12':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.8.0
 
-  dotenv@16.5.0: {}
+  dotenv@17.1.0: {}
 
   fsevents@2.3.2:
     optional: true
@@ -74,4 +74,4 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.2
 
-  undici-types@6.21.0: {}
+  undici-types@7.8.0: {}

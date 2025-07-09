@@ -3,8 +3,8 @@ import { test } from '@playwright/test';
 test.describe("Visa", () => {
   test("Check Progress", async ({page}) => {
     await page.goto("https://visa.educationmalaysia.gov.my/emgs/application/searchForm/");
-    await page.locator("#travel_doc_no").fill(process.env.PASSPORT_NUMBER!!);
-    await page.locator("select#nationality").selectOption(process.env.COUNTRY!!);
+    await page.locator("#travel_doc_no").fill(process.env.PASSPORT_NUMBER!);
+    await page.locator("select#nationality").selectOption(process.env.COUNTRY!);
     await page.locator("input#agreement").check();
     await page.locator("#search-form-validate > div.buttons-set > button").click({ clickCount: 1 });
 
