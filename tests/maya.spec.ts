@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test.describe("UM Maya Portal", () => {
   test("[Admission: e-Visa Approval Letter / Approval to Study] Check status", async ({page}) => {
@@ -17,5 +17,13 @@ test.describe("UM Maya Portal", () => {
     const statusLocator = page.locator(".odd > td:nth-child(4)");
     const status = (await statusLocator.textContent())?.trim();
     console.log(status);
+
+    // Logout
+    await page.locator("li.sv-dropdown:nth-child(1) > a:nth-child(1)").click();
+    await page.locator("li.sv-dropdown:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > a:nth-child(1)").click();
+
+    const backToLoginPageLocator = page.getByText("Back to Login Page");
+    await expect(backToLoginPageLocator).toBeEnabled();
+    await backToLoginPageLocator.click();
   });
 });
